@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.outer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1d95d4;
+  height: 80vh;
+  width: 45vw;
+  border-radius: 50%;
+  border: 0.6vh solid #01111b;
+}
+
+div.inner {
+  position: absolute;
+  top: 57.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fefefe;
+  height: 60vh;
+  width: calc((45 / 80) * 62vw);
+  border-radius: 50%;
+  border: 0.6vh solid #01111b;
+}
+
+div.eyes {
+  position: absolute;
+  top: 57.5%;
+  transform: translate(-50%, -50%);
+  background-color: #fefefe;
+  height: 27vh;
+  width: 11vw;
+  border-radius: 50%;
+  border: 0.6vh solid #01111b;
+
+  z-index: 3;
+}
+
+div.jugaad {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1d95d4;
+  height: 10vh;
+  aspect-ratio: 1/1;
+  z-index: 2;
+}
+
+div.pupil {
+  position: absolute;
+  height: 5vh;
+  aspect-ratio: 1/1;
+  background-color: #010100;
+  border-radius: 50%;
+}
+
+div#left-eye {
+  top: 9.8%;
+  left: 33.5%;
+  transform: translate(-50%, -50%) rotate(-3deg);
+}
+
+div#left-eye div.pupil {
+  top: 65%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+div#right-eye {
+  top: 9.8%;
+  right: 33.5%;
+  transform: translate(50%, -50%) rotate(3deg);
+}
+
+div#right-eye div.pupil {
+  top: 65%;
+  right: 80%;
+  transform: translate(50%, -50%);
+}
+
+div.nose-outer {
+  background-color: #cd1613;
+  height: 8vh;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 31%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+div.nose-glare {
+  background-color: #fcfcf9;
+  height: 3.5vh;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+div.straight-line {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 10vh;
+  width: 0.75vh;
+  background-color: #262726;
+}
+
+div.moustache {
+  position: absolute;
+
+  height: 17.5vh;
+  width: 0.75vh;
+  background-color: #262726;
+}
+
+div#moustache-1 {
+  transform: translate(-50%, -50%) rotate(97.5deg);
+  left: 20%;
+  top: 37.5%;
+}
+
+div#moustache-2 {
+  transform: translate(-50%, -50%) rotate(90deg);
+  left: 20%;
+  top: 43%;
+}
+
+div#moustache-3 {
+  transform: translate(-50%, -50%) rotate(82.5deg);
+  left: 20%;
+  top: 48.5%;
+}
+
+div#moustache-4 {
+  transform: translate(50%, -50%) rotate(82.5deg);
+  right: 20%;
+  top: 37.5%;
+}
+
+div#moustache-5 {
+  transform: translate(50%, -50%) rotate(90deg);
+  right: 20%;
+  top: 43%;
+}
+
+div#moustache-6 {
+  transform: translate(50%, -50%) rotate(97.5deg);
+  right: 20%;
+  top: 48.5%;
+}
+
+div.smile-outer {
+  position: absolute;
+  top: calc(43% + 5vh);
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  height: 22.5vh;
+  width: 70%;
+  background-color: #cc1613;
+
+  /* border-radius: 10px 10px 200px 200px; */
+  border-radius: 10vh 10vh 200vh 200vh;
+  border: 0.75vh solid #3a0706;
+
+  overflow: hidden;
+}
+
+div.tongue {
+  position: absolute;
+
+  height: 30vh;
+  width: 45vh;
+
+  top: 90%;
+  left: 50%;
+
+  transform: translate(-50%, -50%) rotate(5deg);
+  border: 0.75vh solid #3a0706;
+  border-radius: 50%;
+}
